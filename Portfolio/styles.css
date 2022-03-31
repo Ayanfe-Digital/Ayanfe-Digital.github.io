@@ -1,0 +1,2181 @@
+@font-face {
+    font-family: 'montsserat';
+    src: url(Fonts/Montserrat-SemiBold.ttf);
+    font-weight: 100;
+    font-style: SemiBold;
+}
+
+@font-face {
+    font-family: 'montsseratR';
+    src: url(Fonts/Montserrat-Regular.ttf);
+    font-weight: 100;
+    font-style: Regular;
+}
+
+@font-face {
+    font-family: 'montsseratM';
+    src: url(Fonts/Montserrat-Medium.ttf);
+    font-weight: 100;
+    font-style: Regular;
+}
+
+@font-face {
+    font-family: 'Start';
+    src: url(Fonts/PressStart2P-Regular.ttf);
+    font-weight: 100;
+    font-style: Regular;
+}
+
+@font-face {
+    font-family: 'H';
+    src: url(Fonts/hemiheadbdit.ttf);
+    font-weight: 100;
+    font-style: Regular;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   background-image: linear-gradient(to right, #0c0427, #0d0427, #0d0427, #0e0327, #0e0327, #11082f, #130c36, #160e3e, #1f1150, #2a1463, #371575, #451488);
+   padding: 0;
+   margin: 0;
+   height: 100vh;
+   width: 100vw;
+   overscroll-behavior: none;
+cursor: url(Cursors/3.png), auto;
+scroll-behavior: smooth;
+ -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.game {
+    background-image: url(Images/1.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -5.5%;
+   z-index: -1;
+ }
+
+ .girl {
+     background-image: url(Images/MacbookAnimation.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+
+   z-index: 8000;
+
+ }
+
+.background {
+      background-image: url(Images/MacbookBackground.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -6%;
+
+   z-index: -1;
+
+}
+
+.button {
+      background-image: url(Images/buttonp.gif);
+    background-size: 2%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 39%;
+   left: 93.2%;
+   z-index: 10000;
+
+}
+
+
+
+
+
+
+.yanfe {
+    display: none;
+}
+
+.sanus {
+    display: none;
+}
+
+
+
+
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+ section {
+    flex: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    z-index: 10000;
+
+}
+.A, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 16vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 28%;
+     left: 8.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+
+
+}
+ .A::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .A::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+.I, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 16vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 28%;
+     left: 78.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+z-index: 8000;
+
+
+}
+ .I::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .I::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+
+.glitch, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 9.2vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 24%;
+     left: 17.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+
+
+}
+ .glitch::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .glitch::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+ @keyframes glitch {
+     1% {
+         transform: rotateX(10deg) skewX(90deg);
+    }
+     2% {
+         transform: rotateX(0deg) skewX(0deg);
+    }
+
+}
+ .scanlines {
+     overflow: hidden;
+     mix-blend-mode: difference;
+}
+}
+ .scanlines::before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);
+     animation: fudge 7s ease-in-out alternate infinite;
+}
+ @keyframes fudge {
+     from {
+         transform: translate(0px, 0px);
+    }
+     to {
+         transform: translate(0px, 2%);
+    }
+}
+
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes noise-1 {
+     3.3333333333% {
+         clip-path: inset(64px 0 18px 0);
+    }
+     6.6666666667% {
+         clip-path: inset(82px 0 11px 0);
+    }
+     10% {
+         clip-path: inset(28px 0 56px 0);
+    }
+     13.3333333333% {
+         clip-path: inset(75px 0 8px 0);
+    }
+     16.6666666667% {
+         clip-path: inset(42px 0 45px 0);
+    }
+     20% {
+         clip-path: inset(42px 0 16px 0);
+    }
+     23.3333333333% {
+         clip-path: inset(8px 0 78px 0);
+    }
+     26.6666666667% {
+         clip-path: inset(13px 0 39px 0);
+    }
+     30% {
+         clip-path: inset(95px 0 4px 0);
+    }
+     33.3333333333% {
+         clip-path: inset(84px 0 4px 0);
+    }
+     36.6666666667% {
+         clip-path: inset(43px 0 46px 0);
+    }
+     40% {
+         clip-path: inset(26px 0 42px 0);
+    }
+     43.3333333333% {
+         clip-path: inset(85px 0 14px 0);
+    }
+     46.6666666667% {
+         clip-path: inset(75px 0 20px 0);
+    }
+     50% {
+         clip-path: inset(11px 0 19px 0);
+    }
+     53.3333333333% {
+         clip-path: inset(99px 0 2px 0);
+    }
+     56.6666666667% {
+         clip-path: inset(52px 0 24px 0);
+    }
+     60% {
+         clip-path: inset(43px 0 50px 0);
+    }
+     63.3333333333% {
+         clip-path: inset(7px 0 79px 0);
+    }
+     66.6666666667% {
+         clip-path: inset(100px 0 1px 0);
+    }
+     70% {
+         clip-path: inset(81px 0 3px 0);
+    }
+     73.3333333333% {
+         clip-path: inset(86px 0 12px 0);
+    }
+     76.6666666667% {
+         clip-path: inset(39px 0 29px 0);
+    }
+     80% {
+         clip-path: inset(25px 0 71px 0);
+    }
+     83.3333333333% {
+         clip-path: inset(54px 0 13px 0);
+    }
+     86.6666666667% {
+         clip-path: inset(73px 0 6px 0);
+    }
+     90% {
+         clip-path: inset(25px 0 25px 0);
+    }
+     93.3333333333% {
+         clip-path: inset(74px 0 17px 0);
+    }
+     96.6666666667% {
+         clip-path: inset(58px 0 33px 0);
+    }
+     100% {
+         clip-path: inset(47px 0 25px 0);
+    }
+}
+
+.line {
+  width: 0%;
+  height: 45vh;
+  opacity: 0.6;
+  border: solid;
+  color: rgba(255, 255, 255, 1);
+  margin: 3px;
+
+  left: 32%;
+  margin-top: 4.7%;
+position: absolute;
+ transform: rotate(90deg)
+
+
+}
+ hr {
+    position: absolute;
+       opacity: 0.6;
+  margin-top: 17.4%;
+   left: 21.5%;
+  border-top: 3px solid white;
+  z-index: 10000;
+  width: 25.7%; -webkit-animation: fadeIn2 3s;
+          animation: fadeIn2 3s;
+   animation-delay: 0s;
+   z-index: 0;
+ }
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.6;
+  }
+} 
+ .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 1vw;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 1em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+  
+   margin-top: 35%;
+   left: 49%;
+   white-space: nowrap;
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+
+
+}
+}
+ @keyframes glitch-2 {
+     1% {
+         transform: rotateX(10deg) skewX(70deg);
+    }
+     2% {
+         transform: rotateX(0deg) skewX(0deg);
+    }
+
+}
+.border {
+    position: absolute;
+
+    color: #fff;
+    z-index: 10000;
+    border: solid 4px transparent;
+
+    height: 12%;
+    width: 16%;
+    margin-top: 18%;
+    left: 64%;
+  
+    font: hidden;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+a {
+  text-decoration: none;
+  position: absolute;
+    font-size: 2.6vw;
+    color: white;
+    z-index: 10000;
+    font-family: Start;
+    margin-top: 13%;
+    left: 9%;
+    text-transform: uppercase;
+    animation: blink 0.8s linear infinite;
+    animation-direction: alternate;
+    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+}
+
+a:hover {
+  
+animation: none;
+   
+}
+span {
+    display: none;
+}
+
+
+
+
+/* Ipad Pro*/ 
+
+@media only screen and (max-width: 1100px) and (max-height: 1366px) and (orientation: portrait)  {
+
+   .girl {
+     background-image: url(Images/2p.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 0%;
+   z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+ }
+ .top {
+     background-image: url(Images/1.png);
+       background-size: 100%;
+    width: 119.0%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: %;
+   left: -9.5%;
+   z-index: 10000;
+   display: none;
+cursor: url(Cursors/3.png), auto;
+}
+.background {
+      background-image: url(Images/backgroundp.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -6%;
+   z-index: -1;
+cursor: url(Cursors/3.png), auto;
+}
+.button {
+      background-image: url(Images/buttonp.gif);
+    background-size: 3.5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 121.5%;
+   left: 53%;
+   z-index: 10000;
+cursor: url(Cursors/3.png), auto;
+}
+
+.glitch, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 9.2vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 44%;
+     left: 22%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+
+}
+
+.I, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 16vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 48%;
+     left: 83%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+
+}
+.A, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 16vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 48%;
+     left: 13%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+
+
+}
+ hr {
+    position: absolute;
+       opacity: 0.6;
+  margin-top: 27%;
+   left: 24.5%;
+  border-top: 3px solid white;
+  z-index: 10000;
+  width: 25.7%; -webkit-animation: fadeIn2 3s;
+          animation: fadeIn2 3s;
+   animation-delay: 0s;
+   cursor: url(Cursors/3.png), auto;
+ }
+  .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 1.05vw;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 1em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+  
+   margin-top: 54.5%;
+   left: 52%;
+   white-space: nowrap;
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+cursor: url(Cursors/3.png), auto;
+
+
+}
+.border {
+    position: absolute;
+
+    color: #fff;
+    z-index: 10000;
+    border: solid 4px transparent;
+
+    height: 12%;
+    width: 16%;
+    margin-top: 28%;
+    left: 67%;
+  
+    font: hidden;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+a {
+  text-decoration: none;
+  position: absolute;
+    font-size: 3.5vw;
+    color: white;
+    z-index: 10000;
+    font-family: Start;
+    margin-top: -250%;
+    left: 13%;
+    text-transform: uppercase;
+    animation: blink 0.8s linear infinite;
+    animation-direction: alternate;
+    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+}
+
+span {
+    display: none;
+}
+
+/* Ipad Air */
+
+@media screen and (max-width: 820px) {
+   .girl {
+     background-image: url(Images/Air.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 0%;
+   z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+ }
+
+ a {
+ 
+    font-size: 4vw;
+    
+}
+
+.border {
+    left: -5;
+}
+ .top {
+     background-image: url(Images/1.png);
+       background-size: 100%;
+    width: 119.0%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: %;
+   left: -9.5%;
+   z-index: 10000;
+   display: none;
+cursor: url(Cursors/3.png), auto;
+}
+.background {
+      background-image: url(Images/AirBackground.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -6%;
+   z-index: -1;
+cursor: url(Cursors/3.png), auto;
+}
+.button {
+      background-image: url(Images/buttonp.gif);
+    background-size: 3.5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 131%;
+   left: 53%;
+   z-index: 10000;
+cursor: url(Cursors/3.png), auto;
+}
+
+.glitch, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 9.2vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 49%;
+     left: 22%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+
+}
+
+.I, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 16vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 53%;
+     left: 83%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+
+}
+.A, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 16vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 53%;
+     left: 13%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+
+
+}
+ hr {
+    position: absolute;
+       opacity: 0.6;
+  margin-top: 29.5%;
+   left: 24.5%;
+  border-top: 3px solid white;
+  z-index: 10000;
+  width: 25.7%; -webkit-animation: fadeIn2 3s;
+          animation: fadeIn2 3s;
+   animation-delay: 0s;
+   cursor: url(Cursors/3.png), auto;
+ }
+  .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 1.05vw;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 1em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+  
+   margin-top: 59.5%;
+   left: 52%;
+   white-space: nowrap;
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+cursor: url(Cursors/3.png), auto;
+
+
+}
+a {
+  text-decoration: none;
+  position: absolute;
+    font-size: 3.5vw;
+    color: white;
+    z-index: 10000;
+    font-family: Start;
+    margin-top: -245%;
+    left: 9%;
+    text-transform: uppercase;
+    animation: blink 0.8s linear infinite;
+    animation-direction: alternate;
+    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+}
+
+span {
+    display: none;
+}
+}
+.border {
+    position: absolute;
+
+    color: #fff;
+    z-index: 10000;
+    border: solid 4px transparent;
+
+    height: 12%;
+    width: 16%;
+    margin-top: 25%;
+    left: 64.5%;
+  
+    font: hidden;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+/* Iphone 12 pro, Iphone Xr, Iphone X */
+
+@media only screen and (max-width: 414px)  {
+   .girl {
+     background-image: url(Images/Iphone12pro.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 0%;
+   z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+ }
+ .top {
+     background-image: url(Images/1.png);
+       background-size: 100%;
+    width: 119.0%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: %;
+   left: -9.5%;
+   z-index: 10000;
+   display: none;
+cursor: url(Cursors/3.png), auto;
+}
+.background {
+      background-image: url(Images/Iphone12Background.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -6%;
+   z-index: -1;
+cursor: url(Cursors/3.png), auto;
+}
+.button {
+      background-image: url(Images/buttonp.gif);
+    background-size: 5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 7%;
+   left: 48%;
+   z-index: 10000;
+cursor: url(Cursors/3.png), auto;
+}
+
+.glitch, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+  display: none;
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 100%;
+     left: 27%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+
+.yanfe, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+
+display: flex;
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 81%;
+     left: 28%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.yanfe::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .yanfe::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.sanus, .glow {
+     color: #eddddd;
+   
+  width: 100%;
+display: flex;
+
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 108%;
+     left: 30.5%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.sanus::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .sanus::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.I, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 101%;
+     left: 79.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+
+}
+.A, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 88%;
+     left: 12%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+
+
+}
+ hr {
+    position: absolute;
+       opacity: 0.6;
+  margin-top: 63%;
+   left: 15%;
+  border-top: 3px solid white;
+  z-index: 10000;
+  width: 35%; 
+  -webkit-animation: fadeIn2 3s;
+          animation: fadeIn2 3s;
+   animation-delay: 0s;
+   cursor: url(Cursors/3.png), auto;
+ }
+  .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 2.4vw;
+
+     white-space: normal;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 0.7em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+   width: 30%;
+  
+   margin-top: 130%;
+   left: 53%;
+text-align: center;
+ 
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+cursor: url(Cursors/3.png), auto;
+
+
+}
+
+a {
+  text-decoration: none;
+  position: absolute;
+    font-size: 4vw;
+    color: white;
+    z-index: 10000;
+    font-family: Start;
+    margin-top: 13%;
+    left: 9%;
+    text-transform: uppercase;
+    animation: blink 0.8s linear infinite;
+    animation-direction: alternate;
+    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+}
+
+span {
+    display: none;
+}
+}
+.border {
+    position: absolute;
+
+    color: #fff;
+    z-index: 10000;
+    border: solid 4px transparent;
+
+    height: 12%;
+    width: 16%;
+    margin-top: 69%;
+    left: 62%;
+  
+    font: hidden;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+
+/* Iphone SE*/
+
+@media only screen and (height: 667px) {
+   .girl {
+     background-image: url(Images/IphoneSA.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 0%;
+   z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+ }
+ .top {
+     background-image: url(Images/1.png);
+       background-size: 100%;
+    width: 119.0%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: %;
+   left: -9.5%;
+   z-index: 10000;
+   display: none;
+cursor: url(Cursors/3.png), auto;
+}
+.background {
+      background-image: url(Images/IphoneSB.gif);
+    background-size: 100%;
+    width: 98%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -6%;
+   z-index: -1;
+cursor: url(Cursors/3.png), auto;
+}
+.button {
+      background-image: url(Images/buttonp.gif);
+    background-size: 5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 5%;
+   left: 48%;
+   z-index: 10000;
+cursor: url(Cursors/3.png), auto;
+}
+
+.glitch, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+  display: none;
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 100%;
+     left: 27%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+
+.yanfe, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+
+display: flex;
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 61%;
+     left: 28%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.yanfe::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .yanfe::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.sanus, .glow {
+     color: #eddddd;
+   
+  width: 100%;
+display: flex;
+
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 88%;
+     left: 30.5%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.sanus::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .sanus::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.I, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 81%;
+     left: 79.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+
+}
+.A, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 68%;
+     left: 12%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+
+
+}
+ hr {
+    position: absolute;
+       opacity: 0.6;
+  margin-top: 54%;
+   left: 15%;
+  border-top: 3px solid white;
+  z-index: 10000;
+  width: 35%; 
+  -webkit-animation: fadeIn2 3s;
+          animation: fadeIn2 3s;
+   animation-delay: 0s;
+   cursor: url(Cursors/3.png), auto;
+ }
+  .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 2.4vw;
+
+     white-space: normal;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 0.7em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+   width: 30%;
+  
+   margin-top: 110%;
+   left: 53%;
+text-align: center;
+ 
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+cursor: url(Cursors/3.png), auto;
+
+
+}
+
+a {
+  text-decoration: none;
+  position: absolute;
+    font-size: 4vw;
+    color: white;
+    z-index: 10000;
+    font-family: Start;
+    margin-top: -55%;
+    left: 9%;
+    text-transform: uppercase;
+    animation: blink 0.8s linear infinite;
+    animation-direction: alternate;
+    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+}
+
+span {
+    display: none;
+}
+}
+.border {
+    position: absolute;
+
+    color: #fff;
+    z-index: 10000;
+    border: solid 4px transparent;
+
+    height: 12%;
+    width: 16%;
+    margin-top: 69%;
+    left: 62%;
+  
+    font: hidden;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+/* Samsung Galaxy S8+ */
+
+@media only screen and (max-width: 360px) {
+   .girl {
+     background-image: url(Images/SamsungS8A.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 0%;
+   z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+ }
+ .top {
+     background-image: url(Images/1.png);
+       background-size: 100%;
+    width: 119.0%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: %;
+   left: -9.5%;
+   z-index: 10000;
+   display: none;
+cursor: url(Cursors/3.png), auto;
+}
+.background {
+      background-image: url(Images/SamsungS8B.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -6%;
+   z-index: -1;
+cursor: url(Cursors/3.png), auto;
+}
+.button {
+      background-image: url(Images/buttonp.gif);
+    background-size: 5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 6%;
+   left: 48%;
+   z-index: 10000;
+cursor: url(Cursors/3.png), auto;
+}
+
+.glitch, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+  display: none;
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 100%;
+     left: 27%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+
+.yanfe, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+
+display: flex;
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 71%;
+     left: 28%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.yanfe::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .yanfe::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.sanus, .glow {
+     color: #eddddd;
+   
+  width: 100%;
+display: flex;
+
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 98%;
+     left: 30.5%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.sanus::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .sanus::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.I, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 91%;
+     left: 79.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+
+}
+.A, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 78%;
+     left: 12%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+
+
+}
+ hr {
+    position: absolute;
+       opacity: 0.6;
+  margin-top: 59%;
+   left: 15%;
+  border-top: 3px solid white;
+  z-index: 10000;
+  width: 35%; 
+  -webkit-animation: fadeIn2 3s;
+          animation: fadeIn2 3s;
+   animation-delay: 0s;
+   cursor: url(Cursors/3.png), auto;
+ }
+  .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 2.4vw;
+
+     white-space: normal;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 0.7em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+   width: 30%;
+  
+   margin-top: 120%;
+   left: 53%;
+text-align: center;
+ 
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+cursor: url(Cursors/3.png), auto;
+
+
+}
+
+a {
+  text-decoration: none;
+  position: absolute;
+    font-size: 4vw;
+    color: white;
+    z-index: 10000;
+    font-family: Start;
+    margin-top: -20%;
+    left: 9%;
+    text-transform: uppercase;
+    animation: blink 0.8s linear infinite;
+    animation-direction: alternate;
+    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+}
+
+span {
+    display: none;
+}
+}
+.border {
+    position: absolute;
+
+    color: #fff;
+    z-index: 10000;
+    border: solid 4px transparent;
+
+    height: 12%;
+    width: 16%;
+    margin-top: 69%;
+    left: 62%;
+  
+    font: hidden;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+/* Galaxy Fold*/
+
+@media only screen and (max-width: 280px) {
+   .girl {
+     background-image: url(Images/GalaxyFoldA.gif);
+    background-size: 100%;
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 0%;
+   z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+ }
+ .top {
+     background-image: url(Images/1.png);
+       background-size: 100%;
+    width: 119.0%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: %;
+   left: -9.5%;
+   z-index: 10000;
+   display: none;
+cursor: url(Cursors/3.png), auto;
+}
+.background {
+      background-image: url(Images/GalaxyFoldB.gif);
+    background-size: 100%;
+    width: 98%;
+    height: 150%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: -6%;
+   z-index: -1;
+cursor: url(Cursors/3.png), auto;
+}
+.button {
+      background-image: url(Images/buttonp.gif);
+    background-size: 5%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+   margin-top: 7%;
+   left: 48%;
+   z-index: 10000;
+cursor: url(Cursors/3.png), auto;
+}
+
+.glitch, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+  display: none;
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 100%;
+     left: 27%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+
+.yanfe, .glow {
+     color: #eddddd;
+    white-space: normal;
+  width: 20%;
+  text-align: center;
+
+display: flex;
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 76%;
+     left: 28%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.yanfe::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .yanfe::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.sanus, .glow {
+     color: #eddddd;
+   
+  width: 100%;
+display: flex;
+
+
+     position: absolute;
+     font-size: 15vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 103%;
+     left: 30.5%;
+ 
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+z-index: 0;
+align-items: center;
+
+
+}
+.sanus::before, .glow::before {
+     content: attr(data-text);
+     position: absolute;
+     left: 0;
+     text-shadow: -8px 0 magenta;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+ .sanus::after, .glow::after {
+     content: attr(data-text);
+     position: absolute;
+     left: 0px;
+     text-shadow: -5px 0 lightgreen;
+     background: none;
+     overflow: hidden;
+     top: 0;
+     animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+
+.I, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 96%;
+     left: 79.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+z-index: 8000;
+cursor: url(Cursors/3.png), auto;
+
+}
+.A, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 26.5vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 83%;
+     left: 12%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+cursor: url(Cursors/3.png), auto;
+
+
+}
+ hr {
+    position: absolute;
+       opacity: 0.6;
+  margin-top: 61%;
+   left: 15%;
+  border-top: 3px solid white;
+  z-index: 10000;
+  width: 35%; 
+  -webkit-animation: fadeIn2 3s;
+          animation: fadeIn2 3s;
+   animation-delay: 0s;
+   cursor: url(Cursors/3.png), auto;
+ }
+  .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 2.4vw;
+
+     white-space: normal;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 0.7em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+   width: 30%;
+  
+   margin-top: 125%;
+   left: 53%;
+text-align: center;
+ 
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+cursor: url(Cursors/3.png), auto;
+
+
+}
+
+a {
+  text-decoration: none;
+  position: absolute;
+    font-size: 4vw;
+    color: white;
+    z-index: 10000;
+    font-family: Start;
+    margin-top: 8%;
+    left: 9%;
+    text-transform: uppercase;
+    animation: blink 0.8s linear infinite;
+    animation-direction: alternate;
+    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+}
+
+span {
+    display: none;
+}
+}
+.border {
+    position: absolute;
+
+    color: #fff;
+    z-index: 10000;
+    border: solid 4px transparent;
+
+    height: 12%;
+    width: 16%;
+    margin-top: 69%;
+    left: 62%;
+  
+    font: hidden;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+
