@@ -312,6 +312,7 @@ cursor: url(Cursors/3.png), auto;
      flex-direction: row;
      margin-top: 90%;
   z-index: 10000;
+    font-family: VCR;
 }
 
 nav {
@@ -324,6 +325,7 @@ nav {
     animation-delay: 3s;
     opacity: 0;
     animation-fill-mode: forwards;
+      font-family: VCR;
 
  
 
@@ -354,8 +356,9 @@ nav ul li a {
   border-right: 6px solid transparent;
 
   transition: all 0.5s linear;
+    font-family: VCR;
 }
-
+}
 
 /* Ipad Air */
 
@@ -629,7 +632,7 @@ nav ul ul {
     display: none;
     z-index: 10000;
 }
-
+}
 
 
 
