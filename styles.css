@@ -935,7 +935,7 @@ span {
 
 /* Iphone 12 pro, Iphone Xr, Iphone X */
 
-@media all and (max-width: 414px)  {
+@media all and (max-width: 390px)  {
    .girl {
      background-image: url(Images/Iphone12pro.gif);
     background-size: 100%;
