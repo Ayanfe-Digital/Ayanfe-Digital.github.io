@@ -939,7 +939,7 @@ span {
    .girl {
      background-image: url(Images/Iphone12pro.gif);
     background-size: 100%;
-    width: 100%;
+    width: 100% !important;
     height: 150%;
     position: absolute;
     background-repeat: no-repeat;
@@ -996,8 +996,8 @@ cursor: url(Cursors/3.png), auto;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 100%;
-     left: 27%;
+     margin-top: 100% !important;
+     left: 27% !important;
  
      text-size-adjust: auto;
       -webkit-animation: fadeIn 2s;
@@ -1027,8 +1027,8 @@ display: flex;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 81%;
-     left: 28%;
+     margin-top: 81% !important;
+     left: 28% !important;
  
      text-size-adjust: auto;
       -webkit-animation: fadeIn 2s;
@@ -1079,8 +1079,8 @@ display: flex;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 108%;
-     left: 30.5%;
+     margin-top: 108% !important;
+     left: 30.5% !important;
  
      text-size-adjust: auto;
       -webkit-animation: fadeIn 2s;
@@ -1126,8 +1126,8 @@ align-items: center;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 101%;
-     left: 79.5%;
+     margin-top: 101% !important;
+     left: 79.5% !important;
      width: 105%;
      text-size-adjust: auto;
       -webkit-animation: fadeIn 2s;
@@ -1149,8 +1149,8 @@ cursor: url(Cursors/3.png), auto;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 88%;
-     left: 12%;
+     margin-top: 88% !important;
+     left: 12% !important;
      width: 105%;
      text-size-adjust: auto;
       -webkit-animation: fadeIn 2s;
@@ -1168,8 +1168,8 @@ cursor: url(Cursors/3.png), auto;
  hr {
     position: absolute;
        opacity: 0.6;
-  margin-top: 63%;
-   left: 15%;
+  margin-top: 63% !important;
+   left: 15% !important;
   border-top: 3px solid white;
   z-index: 10000;
   width: 35%; 
@@ -1194,8 +1194,8 @@ cursor: url(Cursors/3.png), auto;
    animation-delay: 0s;
    width: 30%;
   
-   margin-top: 130%;
-   left: 53%;
+   margin-top: 130% !important;
+   left: 53% !important;
 text-align: center;
  
    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
