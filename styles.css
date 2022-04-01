@@ -939,6 +939,7 @@ span {
 
 @media only screen and (max-width: 390px)  {
 
+
     body {
    background-image: linear-gradient(to right, #0c0427, #0d0427, #0d0427, #0e0327, #0e0327, #11082f, #130c36, #160e3e, #1f1150, #2a1463, #371575, #451488);
    padding: 0;
@@ -1045,7 +1046,7 @@ display: flex;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 81%;
+     margin-top: 61%;
      left: 28%;
  
      text-size-adjust: auto;
@@ -1097,7 +1098,7 @@ display: flex;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 108%;
+     margin-top: 88%;
      left: 30.5%;
  
      text-size-adjust: auto;
@@ -1144,7 +1145,7 @@ align-items: center;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 101%;
+     margin-top: 81%;
      left: 79.5%;
      width: 105%;
      text-size-adjust: auto;
@@ -1167,7 +1168,7 @@ cursor: url(Cursors/3.png), auto;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 88%;
+     margin-top: 68%;
      left: 12%;
      width: 105%;
      text-size-adjust: auto;
@@ -1186,7 +1187,7 @@ cursor: url(Cursors/3.png), auto;
  hr {
     position: absolute;
        opacity: 0.6;
-  margin-top: 63%;
+  margin-top: 54%;
    left: 15%;
   border-top: 3px solid white;
   z-index: 10000;
@@ -1212,7 +1213,7 @@ cursor: url(Cursors/3.png), auto;
    animation-delay: 0s;
    width: 30%;
   
-   margin-top: 130%;
+   margin-top: 110%;
    left: 53%;
 text-align: center;
  
@@ -1252,7 +1253,7 @@ span {
 
     height: 12%;
     width: 16%;
-    margin-top: 69%;
+    margin-top: 60%;
     left: 62%;
   
     font: hidden;
