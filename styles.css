@@ -787,7 +787,7 @@ span {
 
 /* Ipad */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 768px) {
 
     body {
    background-image: linear-gradient(to right, #0c0427, #0d0427, #0d0427, #0e0327, #0e0327, #11082f, #130c36, #160e3e, #1f1150, #2a1463, #371575, #451488);
