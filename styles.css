@@ -1375,7 +1375,30 @@ span {
 
 /* Iphone SE*/
 
-@media only screen and (height: 667px) {
+@media only screen and (height: 568px) {
+
+    .first {
+    position: absolute;
+    margin-top: 25.5%;
+    left: 12%;
+}
+
+.second {
+    margin-top: -121%;
+}
+
+.third {
+margin-top: -85%;
+}
+
+.fourth {
+    margin-top: -114%;
+}
+
+.fifth {
+    margin-top: -125%;
+}
+
    .girl {
      background-image: url(Images/IphoneSA.gif);
     background-size: 100%;
@@ -1605,19 +1628,40 @@ cursor: url(Cursors/3.png), auto;
 
 
 }
- hr {
-    position: absolute;
-       opacity: 0.6;
-  margin-top: 54%;
-   left: 15%;
-  border-top: 3px solid white;
-  z-index: 10000;
-  width: 35%; 
-  -webkit-animation: fadeIn2 3s;
-          animation: fadeIn2 3s;
-   animation-delay: 0s;
-   cursor: url(Cursors/3.png), auto;
+  hr:nth-of-type(1) {
+   display: none;
  }
+
+  hr:nth-of-type(2) {
+   display: flex;
+   margin-top: 58.5%;
+ }
+  .subtitle {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     font-size: 2.4vw;
+
+     white-space: normal;
+     color: rgba(255, 255, 255, 1);
+     text-transform: uppercase;
+     letter-spacing: 0.7em;
+     position: absolute;
+     animation: glitch-2 5s 5.02s infinite;
+      -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
+   animation-delay: 0s;
+   width: 30%;
+  
+   margin-top: 110%;
+   left: 53%;
+text-align: center;
+ 
+   text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+cursor: url(Cursors/3.png), auto;
+
+
+}
   .subtitle {
      font-family: Arial, Helvetica, sans-serif;
      font-weight: 100;
