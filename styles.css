@@ -562,7 +562,7 @@ transform: skew(0.03turn, 0deg);
 
 /* Ipad Pro*/ 
 
-@media only screen and (max-width: 1100px) and (max-height: 1366px) and (orientation: portrait)  {
+@media only screen and (max-width: 1100px) and (orientation: portrait)  {
  
  body {
    background-image: linear-gradient(to right, #0c0427, #0d0427, #0d0427, #0e0327, #0e0327, #11082f, #130c36, #160e3e, #1f1150, #2a1463, #371575, #451488);
