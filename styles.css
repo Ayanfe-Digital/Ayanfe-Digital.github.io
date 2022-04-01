@@ -161,7 +161,7 @@ scroll-behavior: smooth;
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 28%;
+     margin-top: 4.5%;
      left: 8.5%;
      width: 105%;
      text-size-adjust: auto;
@@ -204,7 +204,7 @@ transform: skew(0.03turn, 0deg);
      animation: glitch 5s 5s infinite;
      font-family: H;
      font-weight: 200px;
-     margin-top: 28%;
+     margin-top: 4.5%;
      left: 78.5%;
      width: 105%;
      text-size-adjust: auto;
@@ -470,7 +470,7 @@ position: absolute;
           animation: fadeIn 3s;
    animation-delay: 0s;
   
-   margin-top: 35%;
+   margin-top: 17%;
    left: 49%;
    white-space: nowrap;
    text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
@@ -531,6 +531,32 @@ span {
     display: none;
 }
 
+@media not all and (min-resolution:.001dpcm) { @media {
+
+
+ .glitch, .glow {
+     color: #eddddd;
+     position: absolute;
+     font-size: 9.2vw;
+     animation: glitch 5s 5s infinite;
+     font-family: H;
+     font-weight: 200px;
+     margin-top: 12%;
+     left: 17.5%;
+     width: 105%;
+     text-size-adjust: auto;
+      -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+   animation-delay: 0s;
+   white-space: nowrap;
+   text-transform: uppercase;
+text-shadow: 15px 15px rgba(6, 10, 20, 0.5);
+text-shadow: 0.1;
+transform: skew(0.03turn, 0deg);
+
+
+}
+}}
 
 
 
