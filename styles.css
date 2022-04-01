@@ -728,6 +728,7 @@ text-shadow: 0.1;
 span {
     display: none;
 }
+}
 
 /* Ipad Air */
 
@@ -913,7 +914,7 @@ text-shadow: 0.1;
 span {
     display: none;
 }
-}
+
 .border {
     position: absolute;
 
@@ -931,6 +932,7 @@ span {
     justify-content: center;
   
 
+}
 }
 
 /* Iphone 12 pro, Iphone Xr, Iphone X */
@@ -1224,7 +1226,7 @@ text-shadow: 0.1;
 span {
     display: none;
 }
-}
+
 .border {
     position: absolute;
 
@@ -1243,7 +1245,7 @@ span {
   
 
 }
-
+}
 
 /* Iphone SE*/
 
@@ -1535,7 +1537,7 @@ text-shadow: 0.1;
 
 span {
     display: none;
-}
+
 }
 .border {
     position: absolute;
@@ -1555,7 +1557,7 @@ span {
   
 
 }
-
+}
 /* Samsung Galaxy S8+ */
 
 @media only screen and (max-width: 360px) {
@@ -1846,7 +1848,7 @@ text-shadow: 0.1;
 
 span {
     display: none;
-}
+
 }
 .border {
     position: absolute;
@@ -1865,6 +1867,7 @@ span {
     justify-content: center;
   
 
+}
 }
 
 /* Galaxy Fold*/
@@ -2157,7 +2160,7 @@ text-shadow: 0.1;
 
 span {
     display: none;
-}
+
 }
 .border {
     position: absolute;
@@ -2176,6 +2179,7 @@ span {
     justify-content: center;
   
 
+}
 }
 
 
