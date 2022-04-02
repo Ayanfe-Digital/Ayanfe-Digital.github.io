@@ -2449,7 +2449,7 @@ span {
 }
 /* Samsung Galaxy S8+ */
 
-@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {  
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) and (orientation:  portrait){  
  
    .first {
     position: absolute;
