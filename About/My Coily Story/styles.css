@@ -56,6 +56,12 @@
   font-family: "SM";
   src: url(Fonts/Supply-Medium.otf);
 }
+
+@font-face {
+    font-family: 'VCRS';
+    src: url(Fonts/VCROSDMono.woff) format('woff');
+   
+}
 *{
     margin: 0;
     padding: 0;
@@ -99,6 +105,7 @@ nav {
     color: white;
     display: flex;
     justify-content: space-between;
+         font-family: VCRS;
 
 
 
@@ -107,7 +114,7 @@ nav {
 nav .mainMenu {
     display: flex;
     list-style: none;
-        font-family: "SR";
+        font-family: VCRS;
        
 }
 
@@ -123,7 +130,7 @@ nav .mainMenu li a {
 nav ul li a:hover {
     color: white;
     z-index: 10000;
-      font-family: "SR";
+        font-family: VCRS;
 }
 
 nav ul ul {
@@ -601,6 +608,9 @@ a{
 /* Iphone 12 pro */
 @media only screen and (max-width: 414px)  {
 
+body {
+    overflow: hidden;
+}
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -620,7 +630,7 @@ a{
     nav .mainMenu .closeMenu {
         display: block;
         position: absolute;
-        top: 20px;
+        top: 60px;
         right: 20px;
     }
 
@@ -642,6 +652,7 @@ a{
     margin-top: -538px;
     left: 131px;
 }
+
  nav .logo {
     margin: 6px;
     font-size: 3.8vw;
