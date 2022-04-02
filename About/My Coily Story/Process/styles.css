@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'VCRS';
+    src: url(Fonts/VCROSDMono.woff) format('woff');
+   
+   }
+   @font-face {
     font-family: 'montsserat';
     src: url(Fonts/Montserrat-SemiBold.ttf);
     font-weight: 100;

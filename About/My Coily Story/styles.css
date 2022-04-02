@@ -631,11 +631,13 @@ body {
         display: block;
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: 50px;
+        transition: top 1s ease;
     }
 
     nav .openMenu {
         display: block;
+          
     }
 
     i {
@@ -651,6 +653,7 @@ body {
     position: absolute;
     margin-top: -538px;
     left: 131px;
+
 }
 
  nav .logo {

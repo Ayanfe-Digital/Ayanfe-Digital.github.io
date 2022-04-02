@@ -674,6 +674,10 @@ cursor: url(Cursors/3.png), auto;
     margin-top: -5%;
 }
 
+.c {
+    margin-top: -150%;
+}
+
 
 
  .screen {
@@ -715,7 +719,7 @@ height: 4%;
     z-index: -1;
     scroll-behavior: smooth;
 cursor: url(Cursors/3.png), auto;
-margin-top: 6%;
+margin-top: -100%;
 }
 
 .about  {
