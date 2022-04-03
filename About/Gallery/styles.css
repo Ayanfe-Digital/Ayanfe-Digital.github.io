@@ -53,6 +53,11 @@
 }
 
 @font-face {
+  font-family: "SRW";
+  src: url(Fonts/Supply-Regular.woff2);
+}
+
+@font-face {
   font-family: "SM";
   src: url(Fonts/Supply-Medium.otf);
 }
