@@ -611,7 +611,7 @@ body {
     nav .mainMenu {
         height: 100vh;
         position: fixed;
-        top: -200;
+        top: -100%;
         right: 0;
         left: 0;
         z-index: 10000;
@@ -629,6 +629,8 @@ body {
         position: absolute;
         top: 60px;
         right: 50px;
+          transition: top 1s ease;
+
       
     }
 
