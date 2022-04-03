@@ -608,9 +608,7 @@ a{
 /* Iphone 12 pro */
 @media only screen and (max-width: 414px)  {
 
-body {
-    overflow: hidden;
-}
+
     nav .mainMenu {
         height: 100vh;
         position: fixed;
