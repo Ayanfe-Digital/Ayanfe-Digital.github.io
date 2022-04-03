@@ -222,7 +222,7 @@ nav .openMenu {
 
 nav .mainMenu .closeMenu, .icons i {
     font-size: 1.9vw;
-    display: none;
+    
     cursor: pointer;
 }
 
