@@ -622,7 +622,7 @@ body {
         justify-content: center;
         align-items: center;
         background: black;
-       
+        transition: top 1s ease;
         display: none;
     
     }
@@ -632,7 +632,7 @@ body {
         position: absolute;
         top: 60px;
         right: 50px;
-        
+        transition: top 1s ease;
     }
 
     nav .openMenu {
