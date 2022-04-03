@@ -236,10 +236,7 @@ nav .logo {
       padding-top: 10px;
 }
 
-.mainMenu {
 
-    margin-top: 1%;
-}
 
 /* This is the animated text*/
 
@@ -632,12 +629,17 @@ body {
         position: absolute;
         top: 60px;
         right: 50px;
-        transition: top 1s ease;
+      
     }
 
     nav .openMenu {
         display: block;
           
+    }
+
+     nav .mainMenu li a:hover {
+        background: none;
+   
     }
 
     i {
@@ -647,6 +649,8 @@ body {
         margin-top: -40%;
         left: ;
     }
+
+
 
 
 .closeMenu {
