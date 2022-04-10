@@ -6,8 +6,17 @@
 	<link rel="stylesheet" href="./styles.css">
 	<title>Document</title>
 	<script src="https://kit.fontawesome.com/08c3112e5d.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+
+
+<div class="loader">
+	<div></div>
+</div>
+
+
+	<main>
 	
 	<nav>
 		<div class="logo" style="font-family: VCRS;"><h2>MY COILY STORY</h2></div>
@@ -44,7 +53,14 @@
 
 	</div>
 	</div>
-		
+		</main>
+
+		<script>
+	$(window).on('load',function(){
+		$(".loader").fadeOut(1000);
+		$("main").fadeIn(1000);
+	});
+</script>
 
 </body>
 <script src="./main.js"></script>

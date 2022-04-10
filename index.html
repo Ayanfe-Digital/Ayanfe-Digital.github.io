@@ -6,9 +6,12 @@
 	<script defer  src="./node_modules/swup/dist/swup.min.js"></script>
 	<title>My Portfolio</title>
 	<link rel="stylesheet" href="./styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-
+<div class="loader">
+	<div></div>
+</div>
 <div class="container">
 
 	<section id="home">
@@ -66,6 +69,13 @@
 
 
 </div>
+
+<script>
+	$(window).on('load',function(){
+		$(".loader").fadeOut(1000);
+		$(".container").fadeIn(1000);
+	});
+</script>
 
 
 
