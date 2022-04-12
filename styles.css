@@ -68,9 +68,7 @@ scroll-behavior: smooth;
   }
 }
 
-.container {
-    display: none;
-}
+
 
 .loader {
     height: 100vh;
