@@ -84,7 +84,9 @@ cursor: url(Cursors/3.png), auto;
     opacity: 1;
   }
 }
-
+.container {
+    display: none;
+}
 
 .loader {
     height: 100vh;
@@ -92,7 +94,6 @@ cursor: url(Cursors/3.png), auto;
     overflow: hidden;
     background-color: black;
     position: absolute;
-    z-index: 20000;
 }
 
 .loader>div {
