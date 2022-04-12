@@ -99,9 +99,6 @@ cursor: url(Cursors/3.png), auto;
   }
 }
 
-main {
-    display: none;
-}
 
 .loader {
     height: 100vh;
@@ -109,6 +106,7 @@ main {
     overflow: hidden;
     background-color: black;
     position: absolute;
+    z-index: 20000;
 }
 
 .loader>div {
