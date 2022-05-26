@@ -70,9 +70,7 @@
     
 }
 
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
 
@@ -264,6 +262,23 @@ nav .logo {
       margin-top: 0.8%;
       padding-top: 10px;
 }
+
+.footer {
+position: absolute;
+
+left: 10px;
+margin-top: 15%;
+
+right: 10px; 
+width: 100%;
+background-color: black;
+color: white;
+text-align: center;
+font-style: italic;
+font-size: 1rem;
+}
+
+
 
 .mainMenu {
 
@@ -506,7 +521,7 @@ main {
     -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
    animation-delay: 0s;
-   margin-top: 17%;
+   margin-top: 0%;
   margin-left: 17%;
   z-index: -1;
   width: 65%;
@@ -570,6 +585,8 @@ a:hover {
     position: fixed;
     width: 69%;
     margin-top: -10%;
+    z-index: 0;
+
 }
 
 .fixed2 {
@@ -577,6 +594,8 @@ a:hover {
     width: 69%;
     margin-left: 30%;
     margin-top: -10%;
+    z-index: -100;
+
 }
 
 
@@ -603,6 +622,7 @@ hr {
   list-style: none;
   margin-top: -12%;
   left: 4%;
+
 }
 
 .social-media-list li a {
