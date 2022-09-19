@@ -291,7 +291,7 @@ nav .logo {
     width: 100vw;
     position: absolute;
       overflow-y: hidden;
-    overflow-x: hidden;
+
 
 
     margin-top: 0.5%;
@@ -299,9 +299,9 @@ nav .logo {
 }
 .image1 {
     background-image: url(Images/2.gif);
-        background-size: 40%;
-    width: 100%;
-    height: 100%;
+        background-size: 100%;
+    width: 39%;
+    height: 180%;
     position: absolute;
     background-repeat: no-repeat;
     z-index: 0;
@@ -362,6 +362,7 @@ h1 {
     overflow: hidden;
     min-width: 100%;
     height: 100%;
+    margin-top: 0.2%;
 }
 .skills1 span {
     display: inline-block;
@@ -374,10 +375,11 @@ h1 {
     white-space: nowrap;
     min-width: 100%;
     height: 100%;
-    line-height: 140px;
+   
     font-size: 1.5vw;
     animation: skills 10s linear infinite;
-    margin-top: -9.4%;
+    margin-top: 0%;
+    right: 0%;
 }
 
 
@@ -521,9 +523,10 @@ hr {
      border-style: solid;
      border-color: white;
      color: white;
-     margin-top: 0%;
+     margin-top: 1%;
      width: 25%;
      align-self: center;
+     position: absolute;
       
 }
 .numbers02 {
@@ -546,7 +549,7 @@ hr {
     position: absolute;
       overflow-y: hidden;
     overflow-x: hidden;
-
+z-index: -1;
 
    margin-top: 60%;
 
@@ -561,8 +564,8 @@ hr {
 }
 .image2 {
     background-image: url(Images/AboutPage.gif);
-        background-size: 29%;
-    width: 100%;
+        background-size: 100%;
+    width: 29%;
     height: 100%;
     position: absolute;
     background-repeat: no-repeat;
@@ -573,8 +576,8 @@ hr {
 
 .image3 {
     background-image: url(Images/AboutPage2.gif);
-        background-size: 23%;
-    width: 100%;
+        background-size: 100%;
+    width: 22.9%;
     height: 100%;
     position: absolute;
     background-repeat: no-repeat;
@@ -624,6 +627,7 @@ hr {
     overflow: hidden;
     min-width: 100%;
     height: 100%;
+    margin-top: 0.2%;
 }
 .skills span {
     display: inline-block;
@@ -636,10 +640,10 @@ hr {
     white-space: nowrap;
     min-width: 100%;
     height: 100%;
-    line-height: 140px;
+
     font-size: 1.5vw;
     animation: skills 10s linear infinite;
-    margin-top: -9.4%;
+   
 }
 
 .skills2 span {
