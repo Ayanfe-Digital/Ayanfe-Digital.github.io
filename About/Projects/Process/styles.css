@@ -368,7 +368,7 @@ hr {
 }
 
 .research {
-    position: relative;
+
     margin-top: 48%;
     height: 100vh;
 }
@@ -436,7 +436,7 @@ P {
 
 .fifth{
     width: 40%;
-    margin-top: -8%;
+    margin-top: -5%;
     margin-left: -15%;
     line-height: 1.5;
     text-align: center;
@@ -509,10 +509,14 @@ P {
 }
 img {
   width: 100%;
+
+
   z-index: 0;
  
    cursor: url(Cursors/3.png), auto;
 }
+
+
 
 .windows {
     background-image: url(Images/windows.jpg);
@@ -678,6 +682,7 @@ img {
 
 
 
+
 }
 
 .cursor2{
@@ -696,14 +701,16 @@ img {
 }
 
 
+
+
+
 .masonry1 {
     display: flex;
     flex-direction: column;
 
-  column-count: 3;
 
 
-  column-gap: 0px;
+  
     -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
    animation-delay: 0s;
@@ -712,8 +719,11 @@ img {
   z-index: -1;
   max-width: 50%;
   height: 62%;
+
+
   overflow: hidden;
   overflow-y: scroll;
+
  
 
 }
@@ -784,10 +794,9 @@ main {
       display: flex;
     flex-direction: column;
 
-  column-count: 3;
 
 
-  column-gap: 0px;
+
  
     -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
@@ -1140,8 +1149,9 @@ main {
 }
 
 .screenshot img {
-
+    width: 100%;
 }
+
 
 .button {
     /*
@@ -1174,6 +1184,92 @@ main {
 .outcome:hover {
     color: blue;
 }
+
+@media screen and (max-height: 790px) {
+
+    .masonry1{
+        height: 65%
+
+    }
+    .cursor {
+        margin-top: -4%;
+        margin-left: -33%;
+    }
+    .cursor2 {
+        margin-top: -3%;
+    }
+    .masonry2 {
+        height: 76%;
+    }
+
+     .masonry3 {
+        height: 54%;
+    }
+
+     .masonry4 {
+        height: 50%;
+    }
+
+     .masonry6 {
+        height: 45%;
+    }
+
+     .screenshot {
+        margin-top: -7%;
+    }
+
+    .ninth {
+        margin-top: 20%;
+    }
+
+
+}
+}
+@media screen and (max-height: 748px) {
+
+    .masonry1{
+        height: 68%
+
+    }
+    .cursor {
+        margin-top: -3%;
+        margin-left: -33%;
+    }
+    .cursor2 {
+        margin-top: -3%;
+    }
+    .masonry2 {
+        height: 78%;
+    }
+
+     .masonry3 {
+        height: 58%;
+    }
+
+     .masonry4 {
+        height: 53%;
+    }
+
+     .masonry6 {
+        height: 47%;
+    }
+
+     .screenshot {
+        margin-top: -5%;
+    }
+
+    .ninth {
+        margin-top: 20%;
+    }
+
+
+}
+}
+
+
+
+
+
 
 
 @media (orientation: portrait) {
@@ -1288,49 +1384,1243 @@ margin-left: 50%;
     margin-top: 50% !important;
 }
 }
-/*
-.image1 {
+
+
+/* Ipad Pro*/ 
+
+@media only screen and (max-width: 1100px) and (orientation: portrait)  {
+    .number1 {
+        margin-top: 5%;
+    }
+
+    
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 3.5vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 7vw;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3vw;
+        width: 85%;
+        margin-top: 25%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+    .number2 {
+        margin-top: -30%;
+    }
+
    
-transform: scale(0.3);
-    margin-top: -36%;
-    margin-left: 40%;
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -12%;
+
+    }
+
+  
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+
+   
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -9%;
 }
 
-.image2 {
-   
-transform: scale(0.3);
-    margin-top: -56%;
-    margin-left: 40%;
+
+.masonry1 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 47%;
+
 }
-.image3 {
-   
-transform: scale(0.3);
-    margin-top: -90%;
-    margin-left: -50%;
-}
-.image4 {
-   
-transform: scale(0.3);
-    margin-top: -36%;
-    margin-left: 40%;
-}
-.image5 {
-   
-transform: scale(0.3);
-    margin-top: -36%;
-    margin-left: 40%;
-}
-.image6 {
-   
-transform: scale(0.3);
-    margin-top: -36%;
-    margin-left: 40%;
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
 }
 
-/*
-/* Iphone 12 pro */
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+  .cursor .cursor2 {
+    display: none;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/ScrollMedia.png);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 15%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry2 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 60%;
+    height: 62%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
+}
+
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -9%;
+}
+
+.masonry3 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 44%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry4 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 40%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry5 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 77%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry5::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+
+.number5 {
+        margin-top: -20%;
+    }
+ .numbers05 {
+        font-size: 4vw;
+    }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+         .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -8%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 37%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
+ 
+
+.seventh{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
+    }
+
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 78%;
+
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+
+.masonry7::-webkit-scrollbar {
+display: none;
+}
+
+.button {
+    margin-top: -130% !important;
+    margin-left: -65%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+
+.footer {
+    width: 70%;
+    margin-top: 150%;
+    font-size: 3vw;
+    margin-left: 30%;
+ 
+
+}
+}
+
+
+
+/* Ipad Pro*/ 
+
+@media only screen and (max-width: 1100px) and (orientation: portrait)  {
+    .number1 {
+        margin-top: 5%;
+    }
+
+    
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 3.5vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 7vw;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3vw;
+        width: 85%;
+        margin-top: 25%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+    .number2 {
+        margin-top: -30%;
+    }
+
+   
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -12%;
+
+    }
+
+  
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+
+   
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -9%;
+}
+
+
+.masonry1 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 47%;
+
+}
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
+}
+
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+  .cursor .cursor2 {
+    display: none;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/ScrollMedia.png);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 15%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry2 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 60%;
+    height: 62%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
+}
+
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -9%;
+}
+
+.masonry3 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 44%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry4 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 40%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry5 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 77%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry5::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+
+.number5 {
+        margin-top: -20%;
+    }
+ .numbers05 {
+        font-size: 4vw;
+    }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+         .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -8%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 37%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
+ 
+
+.seventh{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
+    }
+
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 78%;
+
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+
+.masonry7::-webkit-scrollbar {
+display: none;
+}
+
+.button {
+    margin-top: -130% !important;
+    margin-left: -65%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+
+.footer {
+    width: 70%;
+    margin-top: 150%;
+    font-size: 3vw;
+    margin-left: 30%;
+}
+}
+
+/* Iphone XR*/
+
 @media only screen and (max-width: 414px)  {
 
+    .number1 {
+        margin-top: 10%;
+    }
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 4vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 8vw;
+        margin-top: 35%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3.5vw;
+        width: 85%;
+        margin-top: 60%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+
+    .number2 {
+        margin-top: -30%;
+    }
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -13%;
+
+    }
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry1 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 28%;
+
+}
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
+}
+
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+  .cursor .cursor2 {
+    display: none;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/System.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -65%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry2 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: -20%;
+    height: 38%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
+}
+
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry3 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 27%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry4 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 25%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry5 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 47.5%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry5::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+.number5 {
+        margin-top: -20%;
+    }
+ .numbers05 {
+        font-size: 4vw;
+    }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+
+                .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 22%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
+
+
+.seventh{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
+    }
+
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 48%;
+
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry7::-webkit-scrollbar {
+display: none;
+}
+
+.button {
+    margin-top: -195% !important;
+    margin-left: -75%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+.footer {
+    width: 70%;
+    margin-top: 170%;
+    font-size: 3vw;
+    margin-left: 30%;
+}
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -1448,126 +2738,1029 @@ img {
 }
 
 }
-/* Ipad Pro, Ipad, Ipad Air, Ipad Mini*/ 
 
-@media only screen and (max-width: 1100px) and (max-height: 1366px) and (orientation: portrait)  {
 
-.black {
-    display: none;
+/* Iphone 12 pro */
+
+@media only screen and (max-width: 390px)  {
+
+    .number1 {
+        margin-top: 10%;
+    }
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 4vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 8vw;
+        margin-top: 35%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3.5vw;
+        width: 85%;
+        margin-top: 60%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+    .number2 {
+        margin-top: -30%;
+    }
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -13%;
+
+    }
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
 }
 
 .masonry1 {
-  column-count: 1;
-  margin-top: 51%;
-  width: 80%;
-  margin-left: 10%;
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 28%;
+
+}
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
+}
+
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+  .cursor .cursor2 {
+    display: none;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/System.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -65%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
 }
 
 .masonry2 {
-  column-count: 1;
-   width: 80%;
-  margin-left: 10%;
-  margin-top: 20%;
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: -20%;
+    height: 38%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
 }
 
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
 
 .masonry3 {
-  column-count: 1;
-   width: 80%;
-  margin-left: 10%;
-  margin-top: 25%;
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 27%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
 }
 
 .masonry4 {
-  column-count: 1;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 55%;
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 25%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
 }
 
 .masonry5 {
-  column-count: 1;
-   width: 80%;
-  margin-left: 10%;
-  margin-top: 25%;
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 47.5%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
 }
 
-.masonry6 {
-  column-count: 1;
-     width: 80%;
-  margin-left: 10%;
-  margin-top: 30%;
+.masonry5::-webkit-scrollbar {
+ width: 20%;
 }
 
-.masonry7 {
-  column-count: 1;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 20%;
-}
-h1 {
-    margin-top: 15%;
-    font-size: 5vw;
-}
-
-p {
-    width: 79%;
-    font-size: 2vw;
-    margin-left: -10%;
-    margin-top: 22.5%;
-}
-.second {
-    
-    margin-top: 5%;
-}
-.third {
-    
-    margin-top: 5%;
-}
-
-.fourth {
-    
-    margin-top: 7%;
-}
-.fifth {
-    
-    margin-top: 7%;
+.number5 {
+        margin-top: -20%;
     }
-.sixth {
-    
-    margin-top: 9%;
+ .numbers05 {
+        font-size: 4vw;
     }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+
+                .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 22%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
 
 .seventh{
-    
-    margin-top: 8%;
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
     }
 
- .eigth{
-    
-    margin-top: 6%;
-    }
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
 
-     .ninth {
-    
-    margin-top: 22%;
-    }
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 48%;
 
-    .outcome {
-        display: none;
-    }
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
 
-.fixed {
+.masonry7::-webkit-scrollbar {
 display: none;
 }
 
+.button {
+    margin-top: -195% !important;
+    margin-left: -75%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+.footer {
+    width: 70%;
+    margin-top: 200%;
+    font-size: 3vw;
+    margin-left: 30%;
+}
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+    
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+         z-index: 10000;
+    }
+
+    nav .openMenu {
+        display: block;
+         z-index: 10000;
+    }
+
+    i {
+        display: inline-block;
+        padding: 12px;
+        
+        margin-top: -40%;
+        left: ;
+         z-index: 10000;
+    }
+
+
+.closeMenu {
+    position: absolute;
+    margin-top: -538px;
+    left: 131px;
+     z-index: 10000;
+}
+ nav .logo {
+    margin: 6px;
+    font-size: 3.8vw;
+    cursor: pointer;
+      letter-spacing: 0.2rem;
+      margin-left: 4%;
+      margin-top: 0.5%;
+       z-index: 10000;
+
+}
+
+nav a {
+    font-size: 3vw;
+     z-index: 10000;
+}
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:  5vw;
+    z-index: 10000;
+}
+
+nav ul ul ul li {
+    position: relative;
+    margin-top: -60px;
+    left: 150%;
+    z-index: 10000;
+
+   }
+   nav ul ul li {
+    width: 100%;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 10000;
+    white-space: normal;
+    margin-left: 90%;
+    margin-top: -30%;
+  
+}
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 98%;
+  z-index: -1;
+}
+
+.container {
+    z-index: -1;
+    margin-top: -10%;
+}
+
+img {
+    z-index: 10000;
+
+
+}
+
+.fixed {
+    display: none;
+}
+
 .fixed2 {
-   display: none;
+    display: none;
 }
 
 }
 
+/* Iphone 8 */
+
+@media only screen and (max-width: 375px) and {
+
+    .number1 {
+        margin-top: 10%;
+    }
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 4vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 8vw;
+        margin-top: 35%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3.5vw;
+        width: 85%;
+        margin-top: 60%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+    .number2 {
+        margin-top: -30%;
+    }
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -13%;
+
+    }
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
 }
+
+.masonry1 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 28%;
+
+}
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
+}
+
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+  .cursor .cursor2 {
+    display: none;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/System.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -65%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry2 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: -20%;
+    height: 38%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
+}
+
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry3 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 27%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry4 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 25%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry5 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 47.5%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry5::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number5 {
+        margin-top: -20%;
+    }
+ .numbers05 {
+        font-size: 4vw;
+    }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+
+                .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 22%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
+
+.seventh{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
+    }
+
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 48%;
+
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry7::-webkit-scrollbar {
+display: none;
+}
+
+.button {
+    margin-top: -195% !important;
+    margin-left: -75%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+.footer {
+    width: 70%;
+    margin-top: 200%;
+    font-size: 3vw;
+    margin-left: 30%;
+}
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+    
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+         z-index: 10000;
+    }
+
+    nav .openMenu {
+        display: block;
+         z-index: 10000;
+    }
+
+    i {
+        display: inline-block;
+        padding: 12px;
+        
+        margin-top: -40%;
+        left: ;
+         z-index: 10000;
+    }
+
+
+.closeMenu {
+    position: absolute;
+    margin-top: -538px;
+    left: 131px;
+     z-index: 10000;
+}
+ nav .logo {
+    margin: 6px;
+    font-size: 3.8vw;
+    cursor: pointer;
+      letter-spacing: 0.2rem;
+      margin-left: 4%;
+      margin-top: 0.5%;
+       z-index: 10000;
+
+}
+
+nav a {
+    font-size: 3vw;
+     z-index: 10000;
+}
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:  5vw;
+    z-index: 10000;
+}
+
+nav ul ul ul li {
+    position: relative;
+    margin-top: -60px;
+    left: 150%;
+    z-index: 10000;
+
+   }
+   nav ul ul li {
+    width: 100%;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 10000;
+    white-space: normal;
+    margin-left: 90%;
+    margin-top: -30%;
+  
+}
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 98%;
+  z-index: -1;
+}
+
+.container {
+    z-index: -1;
+    margin-top: -10%;
+}
+
+img {
+    z-index: 10000;
+
+
+}
+
+.fixed {
+    display: none;
+}
+
+.fixed2 {
+    display: none;
+}
+
+}
+
+
 
 
 
@@ -1582,6 +3775,513 @@ display: none;
     margin-top: -485px;
     left: 110px;
 }
+
+ .number1 {
+        margin-top: 10%;
+    }
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 4vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 8vw;
+        margin-top: 35%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3.5vw;
+        width: 85%;
+        margin-top: 60%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+    .number2 {
+        margin-top: -30%;
+    }
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -13%;
+
+    }
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry1 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 35%;
+
+}
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
+}
+
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+  .cursor .cursor2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/System.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -30%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry2 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 10%;
+    height: 49%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
+}
+
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry3 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 33%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry4 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 30%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry5 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 58%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry5::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number5 {
+        margin-top: -20%;
+    }
+ .numbers05 {
+        font-size: 4vw;
+    }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+
+                .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 27%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
+
+.seventh{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
+    }
+
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 58%;
+
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry7::-webkit-scrollbar {
+display: none;
+}
+
+.button {
+    margin-top: -165% !important;
+    margin-left: -75%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+.footer {
+    width: 70%;
+    margin-top: 200%;
+    font-size: 3vw;
+    margin-left: 30%;
+}
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+    
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+         z-index: 10000;
+    }
+
+    nav .openMenu {
+        display: block;
+         z-index: 10000;
+    }
+
+    i {
+        display: inline-block;
+        padding: 12px;
+        
+        margin-top: -40%;
+        left: ;
+         z-index: 10000;
+    }
+
+
+.closeMenu {
+    position: absolute;
+    margin-top: -538px;
+    left: 131px;
+     z-index: 10000;
+}
+ nav .logo {
+    margin: 6px;
+    font-size: 3.8vw;
+    cursor: pointer;
+      letter-spacing: 0.2rem;
+      margin-left: 4%;
+      margin-top: 0.5%;
+       z-index: 10000;
+
+}
+
+nav a {
+    font-size: 3vw;
+     z-index: 10000;
+}
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:  5vw;
+    z-index: 10000;
+}
+
+nav ul ul ul li {
+    position: relative;
+    margin-top: -60px;
+    left: 150%;
+    z-index: 10000;
+
+   }
+   nav ul ul li {
+    width: 100%;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 10000;
+    white-space: normal;
+    margin-left: 90%;
+    margin-top: -30%;
+  
+}
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 98%;
+  z-index: -1;
+}
+
+.container {
+    z-index: -1;
+    margin-top: -10%;
+}
+
+img {
+    z-index: 10000;
+
+
+}
+
+.fixed {
+    display: none;
+}
+
+.fixed2 {
+    display: none;
+}
+
+
 }
 
 /* Iphone 4 */
@@ -1593,6 +4293,511 @@ display: none;
     margin-top: -385px;
     margin-left: 5px;
 }
+
+    .number1 {
+        margin-top: 10%;
+    }
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 4vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 8vw;
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3.5vw;
+        width: 85%;
+        margin-top: 40%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+    .number2 {
+        margin-top: -30%;
+    }
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -13%;
+
+    }
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry1 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 40%;
+
+}
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
+}
+
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+  .cursor .cursor2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/System.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 0%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry2 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 50%;
+    height: 55%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
+}
+
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry3 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 38%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry4 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 35%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry5 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 69%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry5::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number5 {
+        margin-top: -20%;
+    }
+ .numbers05 {
+        font-size: 4vw;
+    }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+
+                .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 32%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
+
+.seventh{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
+    }
+
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 68%;
+
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry7::-webkit-scrollbar {
+display: none;
+}
+
+.button {
+    margin-top: -140% !important;
+    margin-left: -75%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+.footer {
+    width: 70%;
+    margin-top: 200%;
+    font-size: 3vw;
+    margin-left: 30%;
+}
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+    
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+         z-index: 10000;
+    }
+
+    nav .openMenu {
+        display: block;
+         z-index: 10000;
+    }
+
+    i {
+        display: inline-block;
+        padding: 12px;
+        
+        margin-top: -40%;
+        left: ;
+         z-index: 10000;
+    }
+
+
+.closeMenu {
+    position: absolute;
+    margin-top: -538px;
+    left: 131px;
+     z-index: 10000;
+}
+ nav .logo {
+    margin: 6px;
+    font-size: 3.8vw;
+    cursor: pointer;
+      letter-spacing: 0.2rem;
+      margin-left: 4%;
+      margin-top: 0.5%;
+       z-index: 10000;
+
+}
+
+nav a {
+    font-size: 3vw;
+     z-index: 10000;
+}
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:  5vw;
+    z-index: 10000;
+}
+
+nav ul ul ul li {
+    position: relative;
+    margin-top: -60px;
+    left: 150%;
+    z-index: 10000;
+
+   }
+   nav ul ul li {
+    width: 100%;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 10000;
+    white-space: normal;
+    margin-left: 90%;
+    margin-top: -30%;
+  
+}
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 98%;
+  z-index: -1;
+}
+
+.container {
+    z-index: -1;
+    margin-top: -10%;
+}
+
+img {
+    z-index: 10000;
+
+
+}
+
+.fixed {
+    display: none;
+}
+
+.fixed2 {
+    display: none;
+}
 }
 
 
@@ -1603,6 +4808,511 @@ display: none;
     position: absolute;
     margin-top: -520px;
     margin-left: 20px;
+}
+
+     .number1 {
+        margin-top: 10%;
+    }
+
+    .numbers01 {
+        font-size: 4vw;
+    }
+
+    .introt {
+        margin-top: 20%;
+        font-size: 4vw;
+        width: 30%;
+        margin-left: -12%;
+    }
+    h1 {
+        width: 80%;
+        text-align: center;
+        white-space: normal;
+        font-size: 8vw;
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+
+    .first {
+        font-size: 3.5vw;
+        width: 85%;
+        margin-top: 40%;
+        text-align: center;
+        margin-left: -13%;
+    }
+
+    .number2 {
+        margin-top: -30%;
+    }
+
+    .second {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -13%;
+
+    }
+     .numbers02 {
+        font-size: 4vw;
+    }
+
+      .researcht { 
+         font-size: 4vw;
+         margin-top: -30%;
+         width: 20%;
+         margin-left: -7%;
+        
+      
+      }
+.windows {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry1 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 34%;
+
+}
+.masonry1 img {
+     max-width: 87.5%;
+     margin-left:5%;
+ 
+}
+
+.masonry1::-webkit-scrollbar {
+ width: 20%;
+}
+  .cursor .cursor2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .systems {
+    margin-top: 0%;
+
+  }
+
+  .system{
+    background-image: url(Images/System2.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -2%;
+    z-index: -1;
+}
+.system2{
+    background-image: url(Images/System.jpg);
+    background-size: 100%;
+    height: 90%;
+    width: 43%;
+    position: absolute;
+    background-repeat: no-repeat;
+    margin-top: 106%;
+    margin-left: -48%;
+
+}
+  .system .system2 {
+    margin-top: 100%;
+
+  }
+
+  .third {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: -25%;
+
+    }
+
+    .windows2 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry2 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 47%;
+
+}
+.masonry2 img {
+     max-width: 88%;
+     margin-top: 4%;
+     margin-left:5%;
+ 
+}
+
+.masonry2::-webkit-scrollbar {
+ width: 20%;
+}
+
+  .number3 {
+        margin-top: 20%;
+    }
+ .numbers03 {
+        font-size: 4vw;
+    }
+
+    .fourth {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -23%;
+
+    }
+
+     .experimentationt { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 40%;
+         margin-left: -17%;
+     }
+         .windows3 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry3 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 32%;
+
+}
+.masonry3 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry3::-webkit-scrollbar {
+ width: 20%;
+}
+
+ .fifth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -15%;
+        margin-top: 10%;
+
+    }
+
+             .windows4 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry4 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 150%;
+    height: 30%;
+
+}
+.masonry4 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry4::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number4 {
+        margin-top: -20%;
+    }
+ .numbers04 {
+        font-size: 4vw;
+    }
+
+    .extra {
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -10%;
+        margin-top: -18%;
+
+    }
+
+     .roughplant { 
+         font-size: 4vw;
+         margin-top: 25%;
+         width: 30%;
+         margin-left: -12%;
+     }
+
+             .windows5 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+.masonry5 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 25%;
+    height: 58%;
+
+}
+.masonry5 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry5::-webkit-scrollbar {
+ width: 20%;
+}
+
+.number5 {
+        margin-top: -20%;
+    }
+ .numbers05 {
+        font-size: 4vw;
+    }
+
+    .finalt { 
+         font-size: 4vw;
+         margin-top: 20%;
+         width: 15%;
+         margin-left: -5%;
+     }
+
+     .sixth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: -11%;
+
+    }
+
+                .windows6 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry6 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 40%;
+    height: 27%;
+
+}
+.masonry6 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry6::-webkit-scrollbar {
+ width: 20%;
+}
+
+.seventh{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 15%;
+
+    }
+
+                    .windows7 {
+     width: 90%;
+     margin-left: 4%;
+     margin-top: -10%;
+}
+
+    .masonry7 {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-top: 70%;
+    height: 59%;
+
+}
+.masonry7 img {
+     max-width: 88%;
+     margin-top: -1%;
+     margin-left:5%;
+ 
+}
+
+.masonry7::-webkit-scrollbar {
+display: none;
+}
+
+.button {
+    margin-top: -165% !important;
+    margin-left: -75%;
+    font-size: 3vw;
+}
+.outcome {
+    font-size: 3.5vw;
+    
+}
+
+.ninth{
+         font-size: 3vw;
+        width: 86%;
+        text-align: center;
+        margin-left: -12%;
+        margin-top: 85%;
+
+    }
+
+    .windows8 {
+        width: 89%;
+        margin-top: -9%;
+    }
+
+.screenshot {
+    width: 88%;
+    margin-left: 5%;
+    margin-top: 35%;
+}
+
+.footer {
+    width: 70%;
+    margin-top: 200%;
+    font-size: 3vw;
+    margin-left: 30%;
+}
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10000;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display: none;
+    
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+         z-index: 10000;
+    }
+
+    nav .openMenu {
+        display: block;
+         z-index: 10000;
+    }
+
+    i {
+        display: inline-block;
+        padding: 12px;
+        
+        margin-top: -40%;
+        left: ;
+         z-index: 10000;
+    }
+
+
+.closeMenu {
+    position: absolute;
+    margin-top: -538px;
+    left: 131px;
+     z-index: 10000;
+}
+ nav .logo {
+    margin: 6px;
+    font-size: 3.8vw;
+    cursor: pointer;
+      letter-spacing: 0.2rem;
+      margin-left: 4%;
+      margin-top: 0.5%;
+       z-index: 10000;
+
+}
+
+nav a {
+    font-size: 3vw;
+     z-index: 10000;
+}
+
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size:  5vw;
+    z-index: 10000;
+}
+
+nav ul ul ul li {
+    position: relative;
+    margin-top: -60px;
+    left: 150%;
+    z-index: 10000;
+
+   }
+   nav ul ul li {
+    width: 100%;
+    float: none;
+    display: list-item;
+    position: relative;
+    z-index: 10000;
+    white-space: normal;
+    margin-left: 90%;
+    margin-top: -30%;
+  
+}
+.masonry .mItem {
+  display: inline-block;
+  margin-bottom: 4px;
+  width: 98%;
+  z-index: -1;
+}
+
+.container {
+    z-index: -1;
+    margin-top: -10%;
+}
+
+img {
+    z-index: 10000;
+
+
+}
+
+.fixed {
+    display: none;
+}
+
+.fixed2 {
+    display: none;
 }
 }
 
