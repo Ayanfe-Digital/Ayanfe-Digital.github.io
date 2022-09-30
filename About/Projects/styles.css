@@ -574,6 +574,10 @@ z-index: -1;
      
 }
 
+br {
+    display: none;
+}
+
 .image3 {
     background-image: url(Images/AboutPage2.gif);
         background-size: 100%;
@@ -849,6 +853,7 @@ a:hover {
     transform: translate(-50%, -50%);
     width: 100%;
 
+
 }
 
 .container span {
@@ -856,23 +861,81 @@ a:hover {
     display: block;
 }
 
-.text1 {
-   
-    color: white;
-    font-size: 10vw;
-    font-weight: 200;
-    letter-spacing: 8px;
-    margin-bottom: 5px;
-    background: black;
-    position: relative;
-    animation: text 3s 1;
-    height: 100px;
-
+.number1 {
+    margin-top: 5%;
 }
 
-.text2 {
+.numbers01 {
+    margin-left: -45%;
     font-size: 3vw;
-    color: #756acc;
+}
+.title1{
+    margin-left: 25%;
+    font-size: 5.5vw;
+    margin-top: 4%;
+}
+
+
+.skills1 span {
+    font-size: 3vw;
+    padding-left: 10%;
+    animation: skills 15s linear infinite;
+    min-width: 180%;
+    margin-top: 0%;
+
+
+}
+.skill1 {
+    margin-top: 13%;
+    margin-left: 74%;
+}
+
+.image1 {
+      background-size: 100%;
+    width: 45%;
+    height: 180%;
+    margin-left: 5%;
+   
+}
+
+.mcs {
+    font-size: 2.5vw;
+    width: 200%;
+    margin-left: -97.5%;
+    margin-top: 36%;
+}
+
+.info1 {
+    font-size: 2.25vw;
+    margin-top: 16%;
+    text-align: left;
+    width: 48%;
+    margin-left: 52%;
+}
+
+.container {
+    margin-top: 3%;
+}
+
+.screenshots {
+    margin-top: 45%;
+    margin-left: 3%;
+}
+
+.ss1 {
+    background-size: 45%;
+    margin-left: 2%;
+}
+
+.ss2 {
+    background-size: 45%;
+    margin-left: 50%;
+}
+.container2 {
+    margin-top: 145%;
+}
+.image1 {
+    margin-top: 5%;
 }
 
 
@@ -881,10 +944,13 @@ a:hover {
 .buttons {
          animation-name: fadeIn ;
     animation-duration: 3s;
-    animation-delay: 4s;
+    animation-delay: 0s;
     opacity: 0;
     animation-fill-mode: forwards;
-    font-size: 2.5vw;
+    font-size: 3vw;
+    white-space: nowrap;
+    margin-top: 71%;
+    margin-left: 0%;
 }
 
 a{
@@ -897,6 +963,112 @@ a{
    margin-top: 2%;
 
 }
+
+.number2 {
+    margin-top: 5%;
+}
+
+.numbers02 {
+   
+    font-size: 3vw;
+}
+.pmta{
+    margin-left: 50.5%;
+    font-size: 6vw;
+    margin-top: 12%;
+    width: 53%;
+    text-align: left;
+}
+
+
+.skills2 span {
+    font-size: 3vw;
+   animation-delay: 6s;
+}
+
+.skills span {
+      font-size: 3vw;
+  
+
+
+}
+.skill2 {
+    margin-top: 27%;
+    margin-left: 74%;
+}
+
+
+.characters {
+    margin-top: -7%;
+}
+.image2 {
+      background-size: 100%;
+    width: 42%;
+    height: 100%;
+    margin-top: 20%;
+    margin-left: -1%;
+   
+   
+}
+
+.image3 {
+      background-size: 100%;
+    width: 35.9%;
+    height: 100%;
+    margin-top: 10%;
+    
+   
+}
+
+.ta {
+    font-size: 2.5vw;
+    width: 200%;
+    margin-left: -97.5%;
+    margin-top: -10%;
+}
+
+.info2 {
+    font-size: 2.4vw;
+    margin-top: 31%;
+    text-align: left;
+    width: 48%;
+    margin-left: 52%;
+}
+
+
+.screenshots2 {
+    margin-top: 65%;
+    margin-left: 3%;
+}
+
+.buttons2 {
+         animation-name: fadeIn ;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    font-size: 3vw;
+    white-space: nowrap;
+    margin-top: 92.5%;
+    margin-left: 15%;
+}
+
+.ss3 {
+    background-size: 45%;
+    margin-left: 2%;
+}
+
+.ss4 {
+    background-size: 45%;
+    margin-left: 50%;
+}
+.container2 {
+    margin-top: 145%;
+}
+.image1 {
+    margin-top: 5%;
+}
+
 
 .outcome2 {
         position: relative;
