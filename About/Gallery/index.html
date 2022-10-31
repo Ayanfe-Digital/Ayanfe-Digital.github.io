@@ -12,6 +12,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
     integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
     crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+
+    <script>
+    	$(document).ready(function(){
+    		$(".button").click(function(){
+    			var name = $(this).attr("data-filter");
+    			if(name == "all"){
+    				$(".filter").show("2000");
+    			}
+    			else{
+    				$(".filter").not("."+name).hide("2000");
+    				$(".filter").filter("."+name).show("2000");
+    			}
+    		});
+    		$(".navigation a").click(function(){
+    			$(this).addClass("active").siblings().removeClass("active")
+    		});
+
+    	});
+    	
+    </script>
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
     integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
     crossorigin="anonymous" />
@@ -36,11 +60,26 @@
 				<div class="closeMenu"><i class="fa fa-times fa-4x"></i></div>
 		</ul>			
 	</nav>
+
+
+
+<div style="text-align: center;">
+	<div class="navigation">
+		<a href="#" data-filter="all" class="button active">All</a>
+		<a href="#" data-filter="Animation" class="button">Animations</a>
+		<a href="#" data-filter="Portraits" class="button">Portraits</a>
+		<a href="#" data-filter="Collages" class="button">Collages</a>
+		<a href="#" data-filter="Film" class="button">Film</a>
+		<a href="#" data-filter="Traditional" class="button">Traditional</a>
+		<a href="#" data-filter="Photography" class="button">Photography</a>
+		<a href="#" data-filter="Realism" class="button">Realism</a>
+</div>
+</div>
 		
 
         <div class="masonry">
 
-        	    	 	<a href="./Images/59.jpg" class="mItem"> 
+        	    	 	<a href="./Images/59.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/59.jpg" alt="">
 					<span>
 						<h2>Portrait/Composition Practice</h2>
@@ -48,7 +87,7 @@
 					</span>
 				</a>
 
-        	 	<a href="./Images/62.jpg" class="mItem"> 
+        	 	<a href="./Images/62.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/62.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -58,7 +97,7 @@
 
 
 
-        	<a href="./Images/65.jpg" class="mItem"> 
+        	<a href="./Images/65.jpg" class="mItem filter Collages"> 
 					<img src="./Images/65.jpg" alt="">
 					<span>
 						<h2>Gameboy Illustration (Colour Practice)</h2>
@@ -66,7 +105,7 @@
 					</span>
 				</a>
 
-        	<a href="./Images/27.jpg" class="mItem"> 
+        	<a href="./Images/27.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/27.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -75,7 +114,7 @@
 				</a>
   			
 
-				<a href="./Images/1.gif" class="mItem"> 
+				<a href="./Images/1.gif" class="mItem filter Animation"> 
 					<img src="./Images/1.gif" alt="">
 					<span>
 						<h2>Natural Hair x Anxiety</h2>
@@ -84,7 +123,7 @@
 				</a>
 
 
-				<a href="./Images/15.jpg" class="mItem">
+				<a href="./Images/15.jpg" class="mItem filter Portraits">
 					<img src="./Images/15.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -92,7 +131,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/48.jpg" class="mItem"> 
+				<a href="./Images/48.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/48.jpg" alt="">
 					<span>
 						<h2>Bird Study #1</h2>
@@ -100,7 +139,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/49.jpg" class="mItem"> 
+				<a href="./Images/49.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/49.jpg" alt="">
 					<span>
 						<h2>Bird Study #2</h2>
@@ -110,7 +149,7 @@
 
 
 
-				<a href="./Images/2.jpg" class="mItem">
+				<a href="./Images/2.jpg" class="mItem filter Portraits">
 					<img src="./Images/2.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -118,7 +157,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/3.jpg" class="mItem">
+				<a href="./Images/3.jpg" class="mItem filter Portraits">
 					<img src="./Images/3.jpg" alt="">
 					<span>
 						<h2>Game Protagonist</h2>
@@ -126,7 +165,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/4.gif" class="mItem">
+				<a href="./Images/4.gif" class="mItem filter Animation">
 					<img src="./Images/4.gif" alt="">
 					<span>
 						<h2>Sci-fi Protagonist</h2>
@@ -134,7 +173,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/5.gif" class="mItem">
+				<a href="./Images/5.gif" class="mItem filter Animation">
 					<img src="./Images/5.gif" alt="">
 						<span>
 						<h2>How far will you go for straight hair?</h2>
@@ -142,7 +181,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/6.jpg" class="mItem">
+				<a href="./Images/6.jpg" class="mItem filter Collages">
 					<img src="./Images/6.jpg" alt="">
 					<span>
 						<h2>Collage for short story featured in Ambit Magazine</h2>
@@ -153,7 +192,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/50.jpg" class="mItem"> 
+				<a href="./Images/50.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/50.jpg" alt="">
 					<span>
 						<h2>Bird Study #3</h2>
@@ -161,7 +200,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/51.jpg" class="mItem"> 
+				<a href="./Images/51.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/51.jpg" alt="">
 					<span>
 						<h2>Eye Study</h2>
@@ -170,7 +209,7 @@
 				</a>
 
 
-					<a href="./Images/35.JPG" class="mItem">
+					<a href="./Images/35.JPG" class="mItem filter Photography">
 					<img src="./Images/35.JPG" alt="">
 					<span>
 						<h2>A Contaminated 3-course Meal (WaterAid Project) #1</h2>
@@ -180,7 +219,7 @@
 
 
 
-				<a href="./Images/7.jpg" class="mItem">
+				<a href="./Images/7.jpg" class="mItem filter Collages">
 					<img src="./Images/7.jpg" alt="">
 					<span>
 						<h2>Collage for short story featured in Ambit Magazine</h2>
@@ -192,7 +231,7 @@
 
 			
 
-				<a href="./Images/19.jpg" class="mItem">
+				<a href="./Images/19.jpg" class="mItem filter Portraits">
 					<img src="./Images/19.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -200,7 +239,7 @@
 					</span>
 				</a>
 
-					<a href="./Images/31.jpg" class="mItem">
+					<a href="./Images/31.jpg" class="mItem filter Realism">
 					<img src="./Images/31.jpg" alt="">
 					<span>
 						<h2>Realism Practice</h2>
@@ -212,7 +251,7 @@
 
 					
 
-				<a href="./Images/52.jpg" class="mItem"> 
+				<a href="./Images/52.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/52.jpg" alt="">
 					<span>
 						<h2>Nose Study #3</h2>
@@ -220,7 +259,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/53.jpg" class="mItem"> 
+				<a href="./Images/53.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/53.jpg" alt="">
 					<span>
 						<h2>Portrait Study #1</h2>
@@ -228,7 +267,7 @@
 					</span>
 				</a>
 
-				 	<a href="./Images/60.jpg" class="mItem"> 
+				 	<a href="./Images/60.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/60.jpg" alt="">
 					<span>
 						<h2>Portrait/Composition Practice</h2>
@@ -236,7 +275,7 @@
 					</span>
 				</a>
 
-				 	<a href="./Images/63.jpg" class="mItem"> 
+				 	<a href="./Images/63.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/63.jpg" alt="">
 					<span>
 						<h2>Portrait/Composition Practice</h2>
@@ -245,7 +284,7 @@
 				</a>
 
 					
-    	 	<a href="./Images/66.jpg" class="mItem"> 
+    	 	<a href="./Images/66.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/66.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -253,7 +292,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/26.jpg" class="mItem">
+				<a href="./Images/26.jpg" class="mItem filter Collages">
 					<img src="./Images/26.jpg" alt="">
 					<span>
 						<h2>Escape from Reality</h2>
@@ -265,7 +304,7 @@
 
 				
 
-				<a href="./Images/11.gif" class="mItem">
+				<a href="./Images/11.gif" class="mItem filter Animation">
 					<img src="./Images/11.gif" alt="">
 					<span>
 						<h2>The Palatable Black Woman</h2>
@@ -273,7 +312,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/10.gif" class="mItem">
+				<a href="./Images/10.gif" class="mItem filter Animation">
 					<img src="./Images/10.gif" alt="">
 					<span>
 						<h2>Hair Stress :(</h2>
@@ -281,7 +320,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/12.jpg" class="mItem">
+				<a href="./Images/12.jpg" class="mItem filter Portraits">
 					<img src="./Images/12.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -289,7 +328,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/13.gif" class="mItem">
+				<a href="./Images/13.gif" class="mItem filter Animation">
 					<img src="./Images/13.gif" alt="">
 					<span>
 						<h2>Sci-fi Protagonist</h2>
@@ -297,7 +336,7 @@
 					</span>
 				</a>
 
-				  <a href="./Images/46.JPG" class="mItem">
+				  <a href="./Images/46.JPG" class="mItem filter Photography">
 					<img src="./Images/46.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #7</h2>
@@ -305,7 +344,7 @@
 					</span>
 				</a>
 
-				  <a href="./Images/47.JPG" class="mItem">
+				  <a href="./Images/47.JPG" class="mItem filter Photography">
 					<img src="./Images/47.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #8</h2>
@@ -313,7 +352,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/54.jpg" class="mItem"> 
+				<a href="./Images/54.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/54.jpg" alt="">
 					<span>
 						<h2>Portrait Study #2</h2>
@@ -321,7 +360,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/55.jpg" class="mItem"> 
+				<a href="./Images/55.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/55.jpg" alt="">
 					<span>
 						<h2>Portrait Study #3</h2>
@@ -330,7 +369,7 @@
 				</a>
 
 
-				<a href="./Images/28.jpg" class="mItem">
+				<a href="./Images/28.jpg" class="mItem filter Collages">
 					<img src="./Images/28.jpg" alt="">
 					<span>
 						<h2>This Renal Life Prototype for Pinned Media #2</h2>
@@ -338,7 +377,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/17.gif" class="mItem">
+				<a href="./Images/17.gif" class="mItem filter Collages">
 					<img src="./Images/17.gif" alt="">
 					<span>
 						<h2>Amimated Hair Collage</h2>
@@ -347,7 +386,7 @@
 				</a>
 
 
-				<a href="./Images/16.jpg" class="mItem">
+				<a href="./Images/16.jpg" class="mItem filter Portraits">
 					<img src="./Images/16.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -355,7 +394,7 @@
 					</span>
 				</a>
 
-					<a href="./Images/30.jpg" class="mItem">
+					<a href="./Images/30.jpg" class="mItem filter Realism">
 					<img src="./Images/30.jpg" alt="">
 					<span>
 						<h2>Realism Practice</h2>
@@ -363,7 +402,7 @@
 					</span>
 				</a>
 
-					<a href="./Images/56.jpg" class="mItem"> 
+					<a href="./Images/56.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/56.jpg" alt="">
 					<span>
 						<h2>Skulls #1</h2>
@@ -371,7 +410,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/57.jpg" class="mItem"> 
+				<a href="./Images/57.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/57.jpg" alt="">
 					<span>
 						<h2>Skulls #2</h2>
@@ -380,7 +419,7 @@
 				</a>
 
 
-				  <a href="./Images/44.JPG" class="mItem">
+				  <a href="./Images/44.JPG" class="mItem filter Photography">
 					<img src="./Images/44.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #5</h2>
@@ -388,7 +427,7 @@
 					</span>
 				</a>
 
-				  <a href="./Images/45.JPG" class="mItem">
+				  <a href="./Images/45.JPG" class="mItem filter Photography">
 					<img src="./Images/45.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #6</h2>
@@ -396,7 +435,7 @@
 					</span>
 				</a>
 
-					<a href="./Images/58.jpg" class="mItem"> 
+					<a href="./Images/58.jpg" class="mItem filter Traditional"> 
 					<img src="./Images/58.jpg" alt="">
 					<span>
 						<h2>Bird</h2>
@@ -405,7 +444,7 @@
 				</a>
 
 
-	<a href="./Images/37.JPG" class="mItem">
+	<a href="./Images/37.JPG" class="mItem filter Photography">
 					<img src="./Images/37.JPG" alt="">
 					<span>
 						<h2>A Contaminated 3-course Meal (WaterAid Project) #3</h2>
@@ -413,7 +452,7 @@
 					</span>
 				</a>
 
-				 <a href="./Images/40.JPG" class="mItem">
+				 <a href="./Images/40.JPG" class="mItem filter Photography">
 					<img src="./Images/40.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #1</h2>
@@ -426,7 +465,7 @@
  
 
 
-				 	<a href="./Images/61.jpg" class="mItem"> 
+				 	<a href="./Images/61.jpg" class="mItem filter Portraits"> 
 					<img src="./Images/61.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -435,7 +474,7 @@
 				</a>
 
 
-				 	<a href="./Images/64.gif" class="mItem"> 
+				 	<a href="./Images/64.gif" class="mItem filter Animation"> 
 					<img src="./Images/64.gif" alt="">
 					<span>
 						<h2>Animation for "Pinned Media" (commission)</h2>
@@ -444,7 +483,7 @@
 				</a>
 
 
-				 	<a href="./Images/67.gif" class="mItem"> 
+				 	<a href="./Images/67.gif" class="mItem filter Animation"> 
 					<img src="./Images/67.gif" alt="">
 					<span>
 						<h2>Banner for "This Renal Life" (Commission)</h2>
@@ -455,7 +494,7 @@
 
 
 				
-				<a href="./Images/14.gif" class="mItem">
+				<a href="./Images/14.gif" class="mItem filter Animation">
 					<img src="./Images/14.gif" alt="">
 					<span>
 						<h2>3D Hair Relaxer Advert</h2>
@@ -463,7 +502,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/25.gif" class="mItem">
+				<a href="./Images/25.gif" class="mItem filter Film">
 					<img src="./Images/25.gif" alt="">
 					<span>
 						<h2>Dangers of Hair Care, short clip #3</h2>
@@ -475,7 +514,7 @@
 			
 
 				
-					<a href="./Images/8.jpg" class="mItem">
+					<a href="./Images/8.jpg" class="mItem filter Collages">
 					<img src="./Images/8.jpg" alt="">
 					<span>
 						<h2>Collage for short story featured in Ambit Magazine</h2>
@@ -485,7 +524,7 @@
 					</span>
 				</a>
 
-					<a href="./Images/32.JPG" class="mItem">
+					<a href="./Images/32.JPG" class="mItem filter Photography">
 					<img src="./Images/32.JPG" alt="">
 					<span>
 						<h2>Uncanny Cheesecake (WaterAid Project) #1</h2>
@@ -503,7 +542,7 @@
 
 				
 
-				<a href="./Images/9.gif" class="mItem">
+				<a href="./Images/9.gif" class="mItem filter Animation">
 					<img src="./Images/9.gif" alt="">
 					<span>
 						<h2>Black Girl Gamer</h2>
@@ -511,7 +550,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/20.jpg" class="mItem">
+				<a href="./Images/20.jpg" class="mItem filter Portraits">
 					<img src="./Images/20.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -519,7 +558,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/21.gif" class="mItem">
+				<a href="./Images/21.gif" class="mItem filter Photography">
 					<img src="./Images/21.gif" alt="">
 					<span>
 						<h2>Black Hair and Baubles</h2>
@@ -528,7 +567,7 @@
 				</a>
 
 
-				<a href="./Images/29.gif" class="mItem">
+				<a href="./Images/29.gif" class="mItem filter Animation">
 					<img src="./Images/29.gif" alt="">
 					<span>
 						<h2>This Renal Life Prototype for Pinned Media</h2>
@@ -536,7 +575,7 @@
 					</span>
 				</a>
 
-				  <a href="./Images/42.JPG" class="mItem">
+				  <a href="./Images/42.JPG" class="mItem filter Photography">
 					<img src="./Images/42.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #3</h2>
@@ -544,7 +583,7 @@
 					</span>
 				</a>
 
-				  <a href="./Images/43.JPG" class="mItem">
+				  <a href="./Images/43.JPG" class="mItem filter Photography">
 					<img src="./Images/43.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #4</h2>
@@ -554,7 +593,7 @@
 
 
 
-				<a href="./Images/18.jpg" class="mItem">
+				<a href="./Images/18.jpg" class="mItem filter Portraits">
 					<img src="./Images/18.jpg" alt="">
 					<span>
 						<h2>Portrait Practice</h2>
@@ -564,7 +603,7 @@
 
 			
 
-					<a href="./Images/33.JPG" class="mItem">
+					<a href="./Images/33.JPG" class="mItem filter Photography">
 					<img src="./Images/33.JPG" alt="">
 					<span>
 						<h2>Uncanny Spaghetti (WaterAid Project) #1</h2>
@@ -572,7 +611,7 @@
 					</span>
 				</a>
 
-	        <a href="./Images/34.JPG" class="mItem">
+	        <a href="./Images/34.JPG" class="mItem filter Photography">
 					<img src="./Images/34.JPG" alt="">
 					<span>
 						<h2>Uncanny Spaghetti (WaterAid Project) #2</h2>
@@ -585,7 +624,7 @@
 
 					
 
-						<a href="./Images/36.JPG" class="mItem">
+						<a href="./Images/36.JPG" class="mItem filter Photography">
 					<img src="./Images/36.JPG" alt="">
 					<span>
 						<h2>A Contaminated 3-course Meal (WaterAid Project) #2</h2>
@@ -595,7 +634,7 @@
 
 					
 
-						  <a href="./Images/34.JPG" class="mItem">
+						  <a href="./Images/34.JPG" class="mItem filter Photography">
 					<img src="./Images/34.JPG" alt="">
 					<span>
 						<h2>Uncanny Spaghetti (WaterAid Project) #3</h2>
@@ -615,7 +654,7 @@
 
 				
 
-				<a href="./Images/23.gif" class="mItem">
+				<a href="./Images/23.gif" class="mItem filter Photography">
 					<img src="./Images/23.gif" alt="">
 					<span>
 						<h2>Dangers of Hair Care</h2>
@@ -623,7 +662,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/24.gif" class="mItem">
+				<a href="./Images/24.gif" class="mItem filter Film">
 					<img src="./Images/24.gif" alt="">
 					<span>
 						<h2>Dangers of Hair Care, short clip #2</h2>
@@ -631,7 +670,7 @@
 					</span>
 				</a>
 
-				<a href="./Images/22.gif" class="mItem">
+				<a href="./Images/22.gif" class="mItem filter Film">
 					<img src="./Images/22.gif" alt="">
 					<span>
 						<h2>Dangers of Hair Care, short clip #1</h2>
@@ -639,7 +678,7 @@
 					</span>
 				</a>
 
-				  <a href="./Images/32.JPG" class="mItem">
+				  <a href="./Images/32.JPG" class="mItem filter Photography">
 					<img src="./Images/32.JPG" alt="">
 					<span>
 						<h2>Uncanny Cheesecake (WaterAid Project) #2</h2>
@@ -647,7 +686,7 @@
 					</span>
 				</a>
 
-  <a href="./Images/41.JPG" class="mItem">
+  <a href="./Images/41.JPG" class="mItem filter Photography">
 					<img src="./Images/41.JPG" alt="">
 					<span>
 						<h2>Trip to the zoo #2</h2>
