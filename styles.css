@@ -307,6 +307,7 @@ transform: skew(0.03turn, 0deg);
      top: 0;
      animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
 }
+/*
  @keyframes glitch {
      1% {
          transform: rotateX(10deg) skewX(90deg);
@@ -316,6 +317,7 @@ transform: skew(0.03turn, 0deg);
     }
 
 }
+*/
  .scanlines {
      overflow: hidden;
      mix-blend-mode: difference;
