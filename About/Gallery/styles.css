@@ -150,21 +150,42 @@ img {
    cursor: url(Cursors/3.png), auto;
 }
 
+
 .navigation {
     padding: 25px 0px;
     font-size: 1.3vw;
     text-transform: uppercase;
     padding-top: 30px;
 
-}
 
+}
 .navigation a {
     margin-right: 5px;
     text-decoration: none;
     border: 2px solid #ccc;
-    padding: 10px 25px;
+    padding: 10px 15px;
     color: white;
+
 }
+
+/*
+.navigation {
+width: 100%;
+margin: 50px auto;
+padding: 25px auto;
+}
+
+.navigation a {
+    margin-right: 5px;
+    color: white;
+   margin: 20px 0;
+       text-decoration: none;
+    border: 2px solid #ccc;
+        padding: 10px 35px;
+
+}
+
+*/
 
 .navigation a.active {
     background-color: hotpink;
@@ -378,6 +399,7 @@ nav .logo {
 /* Iphone 12 pro */
 @media only screen and (max-width: 414px)  {
 
+
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -394,12 +416,17 @@ nav .logo {
     
     }
 
+
+   
+
     nav .mainMenu .closeMenu {
         display: block;
         position: absolute;
         top: 20px;
         right: 20px;
     }
+
+
 
     nav .openMenu {
         display: block;
@@ -414,11 +441,13 @@ nav .logo {
     }
 
 
+
 .closeMenu {
     position: absolute;
     margin-top: -538px;
     left: 131px;
 }
+
  nav .logo {
     margin: 6px;
     font-size: 3.8vw;
@@ -472,6 +501,19 @@ img {
     z-index: 10000;
 }
 }
+
+
+@media screen and (max-width: 829px) {
+    .navigation a {
+        width: 100%;
+     margin-top: 10px;
+        display: block;
+    }
+    body {
+  width: 100px;
+}
+}
+
 
 /* Iphone SE */
 @media only screen and (max-width: 375px)  {
