@@ -87,6 +87,7 @@ background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, F
 cursor: url(Cursors/3.png), auto;
 
 
+
 }
 
 
@@ -110,21 +111,6 @@ cursor: url(Cursors/3.png), auto;
     z-index: 20000;
 }
 
-.loader>div {
-    height: 100px;
-    width: 100px;
-    border: 15px solid black;
-    border-top-color: hotpink;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 50%;
-    animation: spin 1.5s infinite linear;
-
-}
 
 @keyframes spin {
     100% {
@@ -260,6 +246,8 @@ a:hover span {
 
 /*This is the nav bar*/
 
+
+
 nav {
     color: white;
     display: flex;
@@ -365,6 +353,7 @@ nav ul li {
     display: inline-block;
     z-index: 10000;
   font-family: "SU";
+  margin-top: 1%;
 
 }
 
@@ -391,13 +380,23 @@ nav .logo {
       padding-top: 10px;
 }
 
-.mainMenu {
 
-    margin-top: 1%;
-}
 
 /* Iphone 12 pro */
 @media only screen and (max-width: 414px)  {
+
+    .container {
+    height: 140vh;
+    width: 100vw;
+    position: absolute;
+
+      overflow-x: hidden;
+
+
+
+    margin-top:-10%;
+
+}
 
 
     nav .mainMenu {
@@ -430,6 +429,7 @@ nav .logo {
 
     nav .openMenu {
         display: block;
+
     }
 
     i {
@@ -437,8 +437,9 @@ nav .logo {
         padding: 12px;
         
         margin-top: -40%;
-        left: ;
+     
     }
+
 
 
 
@@ -446,6 +447,7 @@ nav .logo {
     position: absolute;
     margin-top: -538px;
     left: 131px;
+
 }
 
  nav .logo {
@@ -508,9 +510,8 @@ img {
         width: 100%;
      margin-top: 10px;
         display: block;
-    }
-    body {
-  width: 100px;
+        z-index: 1;
+ 
 }
 }
 
