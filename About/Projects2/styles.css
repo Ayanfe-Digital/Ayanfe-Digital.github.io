@@ -330,7 +330,7 @@ nav .logo {
 /* This is the animated text*/
 
 .Banners {
-    height: 467vh;
+    height: 500vh;
     width: 100vw;
     position: absolute;
       overflow-y: hidden;
@@ -518,7 +518,7 @@ nav .logo {
     opacity: 0;
     animation-fill-mode: forwards;
     font-size: 1.7vw;
-    margin-top: 27%;
+    margin-top: 29%;
    
     color: black;
     margin-left: 89%;
@@ -553,7 +553,7 @@ nav .logo {
     opacity: 0;
     animation-fill-mode: forwards;
     font-size: 2vw;
-    margin-top: 51.5%;
+    margin-top: 53%;
    font-family: 'little' ;
     color: black;
     margin-left: 65%;
